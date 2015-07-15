@@ -1,0 +1,17 @@
+ja:
+  activerecord:
+    models:
+      item: 商品情報
+
+    attributes:
+      item:
+        categories: カテゴリー
+        description: 商品詳細
+        inventory: 在庫
+        inventory_status: 在庫状況
+        name: 商品名
+        price: 価格
+        shipping_cost: 送料
+        sku: SKU
+        sku_code: SKUコード
+        status: 表示状態

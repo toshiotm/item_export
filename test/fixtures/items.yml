@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  shipping_cost: 
+  description: MyString
+  status: MyString
+  categories: MyString
+  sku_code: MyString
+  sku: MyString
+  price: 
+  inventory: 
+  inventory_status: MyString
+
+two:
+  name: MyString
+  shipping_cost: 
+  description: MyString
+  status: MyString
+  categories: MyString
+  sku_code: MyString
+  sku: MyString
+  price: 
+  inventory: 
+  inventory_status: MyString

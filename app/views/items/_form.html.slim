@@ -1,0 +1,54 @@
+= form_for @item, html: { class: "form form-horizontal item" } do |f|
+  .form-group
+    = f.label :name, :class => 'control-label'
+    .controls
+      = f.text_field :name, :class => 'form-control'
+    = error_span(@item[:name])
+  .form-group
+    = f.label :shipping_cost, :class => 'control-label'
+    .controls
+      = f.text_field :shipping_cost, :class => 'form-control'
+    = error_span(@item[:shipping_cost])
+  .form-group
+    = f.label :description, :class => 'control-label'
+    .controls
+      = f.text_field :description, :class => 'form-control'
+    = error_span(@item[:description])
+  .form-group
+    = f.label :status, :class => 'control-label'
+    .controls
+      = f.text_field :status, :class => 'form-control'
+    = error_span(@item[:status])
+  .form-group
+    = f.label :categories, :class => 'control-label'
+    .controls
+      = f.text_field :categories, :class => 'form-control'
+    = error_span(@item[:categories])
+  .form-group
+    = f.label :sku_code, :class => 'control-label'
+    .controls
+      = f.text_field :sku_code, :class => 'form-control'
+    = error_span(@item[:sku_code])
+  .form-group
+    = f.label :sku, :class => 'control-label'
+    .controls
+      = f.text_field :sku, :class => 'form-control'
+    = error_span(@item[:sku])
+  .form-group
+    = f.label :price, :class => 'control-label'
+    .controls
+      = f.text_field :price, :class => 'form-control'
+    = error_span(@item[:price])
+  .form-group
+    = f.label :inventory, :class => 'control-label'
+    .controls
+      = f.text_field :inventory, :class => 'form-control'
+    = error_span(@item[:inventory])
+  .form-group
+    = f.label :inventory_status, :class => 'control-label'
+    .controls
+      = f.text_field :inventory_status, :class => 'form-control'
+    = error_span(@item[:inventory_status])
+  = f.submit nil, :class => 'btn btn-primary'
+  '
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), items_path, :class => 'btn'

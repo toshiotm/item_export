@@ -1,0 +1,50 @@
+- model_class = Item
+div class="page-header"
+  h1=t '.title', :default => model_class.model_name.human.titleize
+
+p
+  strong= model_class.human_attribute_name(:name) + ':'
+  br
+  = @item.name
+p
+  strong= model_class.human_attribute_name(:shipping_cost) + ':'
+  br
+  = @item.shipping_cost
+p
+  strong= model_class.human_attribute_name(:description) + ':'
+  br
+  = @item.description
+p
+  strong= model_class.human_attribute_name(:status) + ':'
+  br
+  = @item.status
+p
+  strong= model_class.human_attribute_name(:categories) + ':'
+  br
+  = @item.categories
+p
+  strong= model_class.human_attribute_name(:sku_code) + ':'
+  br
+  = @item.sku_code
+p
+  strong= model_class.human_attribute_name(:sku) + ':'
+  br
+  = @item.sku
+p
+  strong= model_class.human_attribute_name(:price) + ':'
+  br
+  = @item.price
+p
+  strong= model_class.human_attribute_name(:inventory) + ':'
+  br
+  = @item.inventory
+p
+  strong= model_class.human_attribute_name(:inventory_status) + ':'
+  br
+  = @item.inventory_status
+
+= link_to t('.back', :default => t("helpers.links.back")), items_path, :class => 'btn btn-default'
+'
+= link_to t('.edit', :default => t("helpers.links.edit")), edit_item_path(@item), :class => 'btn btn-default'
+'
+= link_to t('.destroy', :default => t("helpers.links.destroy")), item_path(@item), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'
