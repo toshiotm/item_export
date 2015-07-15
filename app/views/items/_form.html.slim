@@ -1,4 +1,4 @@
-= form_for @item, html: { class: "form form-horizontal item" } do |f|
+= form_for @item, html: { class: "form" } do |f|
   .form-group
     = f.label :name, :class => 'control-label'
     .controls
@@ -51,4 +51,4 @@
     = error_span(@item[:inventory_status])
   = f.submit nil, :class => 'btn btn-primary'
   '
-  = link_to t('.cancel', :default => t("helpers.links.cancel")), items_path, :class => 'btn'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), items_path, :class => 'btn btn-default'

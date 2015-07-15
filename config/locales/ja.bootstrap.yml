@@ -18,6 +18,7 @@ ja:
       edit: 編集
       show: 詳細
     titles:
+      index: "%{model} 一覧"
       edit: "編集 %{model}"
       save: "保存 %{model}"
       new: "新規 %{model}"
