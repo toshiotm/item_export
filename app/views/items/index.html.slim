@@ -1,6 +1,11 @@
 - model_class = Item
-div class="page-header"
+.page-header
   h1=t '.title', :default => [:'helpers.titles.index', 'index %{model}'], :model => model_class.model_name.human.titleize
+  p
+    = link_to '商品情報CSVファイル一括インポート', nil, :data => { :confirm => 'この機能はまだありません。' }, :class => 'btn btn-default'
+  p
+    = link_to '商品情報CSVファイル一括エクスポート', nil, :data => { :confirm => 'この機能はまだありません。' }, :class => 'btn btn-primary'
+
 table class="table table-striped"
   thead
     tr
