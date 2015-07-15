@@ -2,9 +2,9 @@
 .page-header
   h1=t '.title', :default => [:'helpers.titles.index', 'index %{model}'], :model => model_class.model_name.human.titleize
   p
-    = link_to '商品情報CSVファイル一括インポート', nil, :data => { :confirm => 'この機能はまだありません。' }, :class => 'btn btn-default'
+    = link_to '商品情報CSVファイル一括インポート', nil, :data => { :confirm => '[未実装]このボタンで商品情報を一括でインポートすることが出来ます' }, :class => 'btn btn-default'
   p
-    = link_to '商品情報CSVファイル一括エクスポート', nil, :data => { :confirm => 'この機能はまだありません。' }, :class => 'btn btn-primary'
+    = link_to '商品情報CSVファイル一括エクスポート', nil, :data => { :confirm => '[未実装]このボタンから複数のECサイトごとのCSVファイルのエクスポートが行われる予定です' }, :class => 'btn btn-primary'
 
 table class="table table-striped"
   thead
